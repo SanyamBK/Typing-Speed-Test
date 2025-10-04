@@ -33,3 +33,49 @@ Open the Vite URL shown in the terminal (e.g. http://localhost:3000 or 3001) and
 - The server updates a user's score only if the new WPM is higher than the previous one.
 - Leaderboard endpoint: `GET /leaderboard`
 - Save score endpoint: `POST /score` with JSON `{ name, wpm }`.
+
+---
+
+## Screenshot
+
+![Typing Speed Test Screenshot](./screenshots/image.png)
+
+---
+
+## Features
+
+- Lightweight React frontend (Vite) with a minimal UI for running typing tests.
+- Real-time WPM and accuracy calculation.
+- Backend API (Express + Mongoose) that stores scores in MongoDB and returns a live leaderboard.
+- Local development friendly: backend uses `process.env.MONGO_URI` with a local fallback for quick testing.
+
+## What you can do with this project
+
+- Run locally to practice typing and record scores.
+- Extend the frontend with additional feedback (per-character accuracy, timers).
+- Hook the backend to a hosted MongoDB Atlas instance for a public leaderboard.
+
+## Suggested About (Repository) description
+
+"A minimal Typing Speed Test app built with React (Vite) and Node/Express + MongoDB. Calculates WPM and accuracy and stores top scores for a live leaderboard. Great starter full-stack MERN mini-project."
+
+## Suggested Topics / Tags (copy to GitHub topics)
+
+- react
+- vite
+- express
+- nodejs
+- mongo
+- mongoose
+- typescript
+- full-stack
+- mern
+- typing-test
+
+## Contributing
+
+Contributions are welcome — open an issue or PR if you want to add features or improvements.
+
+## License
+
+This project does not include a LICENSE by default. Consider adding an MIT license if you plan to share publicly.
